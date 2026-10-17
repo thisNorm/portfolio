@@ -98,7 +98,10 @@ async function start() {
     console.log('MySQL 연결 성공');
 
     app.locals.db = pool;
-    app.listen(port, () => console.log(`Server running on http://localhost:${port}`));
+    app.listen(port, (err) => {
+      if (err) throw err;
+      console.log(`Server running on http://localhost:${port}`);
+    });
   } catch (e) {
     console.error('MySQL 연결 실패:', e);
     process.exit(1);
