@@ -7,7 +7,7 @@
     "test": "node --test"
   },  
   "dependencies": {  
-    "body-parser": "^2.3.0",
+    "body-parser": "^2.4.0",
     "dotenv": "^16.4.7",  
     "ejs": "^3.1.10",  
     "express": "^5.2.1",
